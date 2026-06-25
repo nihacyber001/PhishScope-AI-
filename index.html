@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PhishScope AI</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <div class="background-orbs">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+    </div>
+    
+    <div class="container">
+        <header>
+            <h1>PhishScope AI</h1>
+            <p>Advanced Cybersecurity Email Analysis Platform</p>
+        </header>
+        
+        <main>
+            <div class="glass-card upload-section">
+                <h2>Analyze Content</h2>
+                <form id="analyze-form">
+                    <div class="form-group">
+                        <label for="email_text">Paste Email Content or URLs</label>
+                        <textarea id="email_text" name="email_text" placeholder="Paste the suspicious email text here..." rows="5"></textarea>
+                    </div>
+                    
+                    <div class="divider"><span>OR</span></div>
+                    
+                    <div class="form-group">
+                        <label for="email_file" class="file-label">
+                            <span class="file-icon">📄</span> Upload Email File (.eml, .txt)
+                        </label>
+                        <input type="file" id="email_file" name="email_file" class="file-input">
+                    </div>
+                    
+                    <button type="submit" id="submit-btn">
+                        <span class="btn-text">Analyze Now</span>
+                        <span class="spinner hidden"></span>
+                    </button>
+                </form>
+            </div>
+            
+            <div id="results-container" class="glass-card results-section hidden">
+                <div class="results-header">
+                    <h2>Overall Assessment</h2>
+                    <div id="overall-risk-badge" class="risk-badge">Clean</div>
+                </div>
+                <div id="summary-message" class="summary-message"></div>
+                
+                <div class="analysis-grid">
+                    <div class="analysis-column">
+                        <h3>💬 Content Analysis</h3>
+                        <div id="content-risk-badge" class="risk-badge" style="margin-bottom: 1rem; display: inline-block;">Clean</div>
+                        <div id="content-findings" class="content-findings">
+                            <!-- Dynamic content findings will be injected here -->
+                        </div>
+                    </div>
+                    
+                    <div class="analysis-column">
+                        <h3>🔗 Link Analysis</h3>
+                        <div id="urls-list" class="urls-list">
+                            <!-- Dynamic URL results will be injected here -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="/static/js/script.js"></script>
+</body>
+</html>
