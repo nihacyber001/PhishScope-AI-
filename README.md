@@ -38,10 +38,24 @@ python app.py
 
 http://127.0.0.1:5000
 
+ PROJECT STRUCTURE 
+ PhishScope-AI/
+│
+├── app.py
+├── content_analyzer.py
+├── ioc_extractor.py
+├── requirements.txt
+├── index.html
+└── README.md
+ 
+ 
+
 License
 
 This project is intended for educational and cybersecurity awareness purposes.Before saving, replace:
 nihacyber001 
 https://github.com/nihacyber001/PhishScope-AI-.git
 phishing-detection
-PhishScope-AI 
+cd PhishScope-AI-
+pip install -r requirements.txt
+python app.py
