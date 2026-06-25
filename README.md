@@ -103,3 +103,34 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 ```bash
 pip install -r requirements.txt
 python app.py
+Repository Structure
+
+PhishScope-AI/
+│
+├── frontend/
+├── backend/
+├── screenshots/
+├── docs/
+├── README.md
+├── requirements.txt
+└── LICENSE
+
+Future Scope
+
+Browser Extension Integration
+
+Mobile Application Development
+
+Deep Learning-Based Detection Models
+
+Real-Time Threat Monitoring Dashboard
+
+Cloud Deployment Support
+
+Automated Threat Intelligence Updates
+
+Author
+
+nihacyber001
+
+GitHub Repository:https://github.com/nihacyber001/PhishScope-AI-
